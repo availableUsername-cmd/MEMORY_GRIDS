@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "../",
+    "command": "gcc -std=c++20 -Iinclude -c main.cpp",
+    "file": "main.cpp"
+  }
+]

@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "sdl.h": "c",
+        "sdl_main.h": "c",
+        "stdio.h": "c",
+        "sdl_ttf.h": "c",
+        "bit": "c",
+        "compare": "c",
+        "limits": "c",
+        "new": "c"
+    },
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.clang_format_fallbackStyle": "GNU"
+}
