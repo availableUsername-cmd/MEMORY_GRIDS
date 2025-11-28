@@ -286,7 +286,7 @@ int main(int argc,char *argv[]){
                 {
                     block_size_in_pixel/=2;
                 } else break;
-                //啊啊啊啊气死我了不能在里面加int啊啊啊啊啊啊要不然只要在switch里有效了啊啊啊啊啊！！！！！！😵😵🤪🤪😡😡😭😭😱😱😱
+                //啊啊啊啊气死我了不能在里面加int啊啊啊啊啊啊要不然只要在switch里有效了啊啊啊啊啊！！！！！！😵😵🤪🤪😡😡😭😭😱😱
                 w=window_width/block_size_in_pixel+1;
                 h=window_height/block_size_in_pixel+1;
                 SDL_Log("gw:%d,gh:%d",w,h);
@@ -337,6 +337,7 @@ int main(int argc,char *argv[]){
         SDL_RenderPresent(as.renderer);
         SDL_Delay(50);
 
+        //经验证，这些数字在我的电脑上不会导致越界，你的电脑就不知道了
         if (loop_have_no_event) {grid_x+=1;x_loop_count+=1;}
         if (x_loop_count>=768) {grid_y+=19; SDL_Log("Now Start Point:%d",grid_x+grid_y*matrix.width);cycletime+=1;x_loop_count=0;}
         if (cycletime>15) {grid_x=START_X;grid_y=START_Y;cycletime=0;}
@@ -347,5 +348,6 @@ int main(int argc,char *argv[]){
     SDL_DestroyRenderer(as.renderer);
     SDL_DestroyWindow(as.window);
     SDL_Quit();
+
 
 }
