@@ -9,10 +9,9 @@
 				"-O2",
 				"-g",
 				"${workspaceFolder}/*.c",
-				"-IC:/MinGW/include",
+				"-IC:/MinGW/include",  //如果要编译，替换成你的路径
 				"-LC:/MinGW/lib",
 				"-lSDL3",
-				"-lSDL3_ttf",
 				"-o",
 				"${workspaceFolder}/output/${workspaceRootFolderName}.exe"
 			],
